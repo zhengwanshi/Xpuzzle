@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/rl_puzzle_main_main_layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/main_bg">
+    <LinearLayout
+        android:id="@+id/ll_puzzle_main_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="步数："
+            android:textColor="@color/title_text"
+            android:textSize="24sp"/>
+        <TextView
+            android:id="@+id/tv_puzzle_main_counts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="50dip"
+            android:text="1"
+            android:textColor="@color/title_text"
+            android:textSize="24sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="时间："
+            android:textColor="@color/title_text"
+            android:textSize="24sp"/>
+        <TextView
+            android:id="@+id/tv_puzzle_main_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/title_text"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_puzzle_main_btns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8sp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_puzzle_main_img"
+            style="@style/btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8sp"
+            android:background="@drawable/button_while"
+            android:text="原图"/>
+        <Button
+            android:id="@+id/btn_puzzle_main_restart"
+            style="@style/btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8sp"
+            android:background="@drawable/button_while"
+            android:text="重置"/>
+        <Button
+            android:id="@+id/btn_puzzle_main_back"
+            style="@style/btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8sp"
+            android:background="@drawable/button_while"
+            android:text="返回"/>
+
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_puzzle_main_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_puzzle_main_btns"
+        android:layout_below="@id/ll_puzzle_main_spinner"
+        android:layout_centerInParent="true"
+        android:layout_margin="8sp">
+
+    </GridView>
+</RelativeLayout>
